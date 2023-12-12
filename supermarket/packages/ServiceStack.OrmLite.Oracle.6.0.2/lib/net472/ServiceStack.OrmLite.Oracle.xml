@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceStack.OrmLite.Oracle</name>
+    </assembly>
+    <members>
+        <member name="T:ServiceStack.OrmLite.Oracle.Converters.Oracle12StringConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ServiceStack.OrmLite.Oracle.Oracle11OrmLiteDialectProvider">
+            <summary>
+            Oracle v11 specific provider
+            </summary>
+        </member>
+        <member name="T:ServiceStack.OrmLite.Oracle.Oracle18OrmLiteDialectProvider">
+            <summary>
+            Oracle 18 specific provider
+            </summary>
+        </member>
+    </members>
+</doc>

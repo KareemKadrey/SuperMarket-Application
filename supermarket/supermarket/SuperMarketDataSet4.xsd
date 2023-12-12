@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SuperMarketDataSet4" targetNamespace="http://tempuri.org/SuperMarketDataSet4.xsd" xmlns:mstns="http://tempuri.org/SuperMarketDataSet4.xsd" xmlns="http://tempuri.org/SuperMarketDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SuperMarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SuperMarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.supermarket.Properties.Settings.GlobalReference.Default.SuperMarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CUSTOMERTableAdapter" GeneratorDataComponentClassName="CUSTOMERTableAdapter" Name="CUSTOMER" UserDataComponentName="CUSTOMERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SuperMarketConnectionString (Settings)" DbObjectName="SuperMarket.dbo.CUSTOMER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT username, address, phone FROM dbo.CUSTOMER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="phone" DataSetColumn="phone" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ORDERSTableAdapter" GeneratorDataComponentClassName="ORDERSTableAdapter" Name="ORDERS" UserDataComponentName="ORDERSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SuperMarketConnectionString (Settings)" DbObjectName="SuperMarket.dbo.ORDERS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT order_status, customer_id FROM dbo.ORDERS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="order_status" DataSetColumn="order_status" />
+              <Mapping SourceColumn="customer_id" DataSetColumn="customer_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SuperMarketDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SuperMarketDataSet4" msprop:Generator_DataSetName="SuperMarketDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CUSTOMER" msprop:Generator_RowEvHandlerName="CUSTOMERRowChangeEventHandler" msprop:Generator_RowDeletedName="CUSTOMERRowDeleted" msprop:Generator_RowDeletingName="CUSTOMERRowDeleting" msprop:Generator_RowEvArgName="CUSTOMERRowChangeEvent" msprop:Generator_TablePropName="CUSTOMER" msprop:Generator_RowChangedName="CUSTOMERRowChanged" msprop:Generator_RowChangingName="CUSTOMERRowChanging" msprop:Generator_TableClassName="CUSTOMERDataTable" msprop:Generator_RowClassName="CUSTOMERRow" msprop:Generator_TableVarName="tableCUSTOMER" msprop:Generator_UserTableName="CUSTOMER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="username" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phone" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_ColumnVarNameInTable="columnphone" msprop:Generator_UserColumnName="phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ORDERS" msprop:Generator_RowEvHandlerName="ORDERSRowChangeEventHandler" msprop:Generator_RowDeletedName="ORDERSRowDeleted" msprop:Generator_RowDeletingName="ORDERSRowDeleting" msprop:Generator_RowEvArgName="ORDERSRowChangeEvent" msprop:Generator_TablePropName="ORDERS" msprop:Generator_RowChangedName="ORDERSRowChanged" msprop:Generator_RowChangingName="ORDERSRowChanging" msprop:Generator_TableClassName="ORDERSDataTable" msprop:Generator_RowClassName="ORDERSRow" msprop:Generator_TableVarName="tableORDERS" msprop:Generator_UserTableName="ORDERS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order_status" msprop:Generator_ColumnPropNameInRow="order_status" msprop:Generator_ColumnPropNameInTable="order_statusColumn" msprop:Generator_ColumnVarNameInTable="columnorder_status" msprop:Generator_UserColumnName="order_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="customer_id" msprop:Generator_ColumnPropNameInRow="customer_id" msprop:Generator_ColumnPropNameInTable="customer_idColumn" msprop:Generator_ColumnVarNameInTable="columncustomer_id" msprop:Generator_UserColumnName="customer_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

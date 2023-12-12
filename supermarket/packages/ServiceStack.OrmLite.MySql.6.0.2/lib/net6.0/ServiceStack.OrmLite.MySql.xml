@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceStack.OrmLite.MySql</name>
+    </assembly>
+    <members>
+        <member name="P:ServiceStack.OrmLite.MySql.Converters.MySql55DateTimeConverter.ColumnDefinition">
+            <summary>
+            CURRENT_TIMESTAMP as a default for DATETIME type is only available in 10.x. If you're using 5.5, it should a TIMESTAMP column
+            </summary>
+        </member>
+    </members>
+</doc>

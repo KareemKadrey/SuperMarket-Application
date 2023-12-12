@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SuperMarketDataSet10" targetNamespace="http://tempuri.org/SuperMarketDataSet10.xsd" xmlns:mstns="http://tempuri.org/SuperMarketDataSet10.xsd" xmlns="http://tempuri.org/SuperMarketDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SuperMarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SuperMarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.supermarket.Properties.Settings.GlobalReference.Default.SuperMarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRODUCTTableAdapter" GeneratorDataComponentClassName="PRODUCTTableAdapter" Name="PRODUCT" UserDataComponentName="PRODUCTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SuperMarketConnectionString (Settings)" DbObjectName="SuperMarket.dbo.PRODUCT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT product_name, price, quantity, production_date, expiry_date FROM dbo.PRODUCT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="product_name" DataSetColumn="product_name" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="production_date" DataSetColumn="production_date" />
+              <Mapping SourceColumn="expiry_date" DataSetColumn="expiry_date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SuperMarketDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SuperMarketDataSet10" msprop:Generator_DataSetName="SuperMarketDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PRODUCT" msprop:Generator_RowEvHandlerName="PRODUCTRowChangeEventHandler" msprop:Generator_RowDeletedName="PRODUCTRowDeleted" msprop:Generator_RowDeletingName="PRODUCTRowDeleting" msprop:Generator_RowEvArgName="PRODUCTRowChangeEvent" msprop:Generator_TablePropName="PRODUCT" msprop:Generator_RowChangedName="PRODUCTRowChanged" msprop:Generator_RowChangingName="PRODUCTRowChanging" msprop:Generator_TableClassName="PRODUCTDataTable" msprop:Generator_RowClassName="PRODUCTRow" msprop:Generator_TableVarName="tablePRODUCT" msprop:Generator_UserTableName="PRODUCT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="product_name" msprop:Generator_ColumnPropNameInRow="product_name" msprop:Generator_ColumnPropNameInTable="product_nameColumn" msprop:Generator_ColumnVarNameInTable="columnproduct_name" msprop:Generator_UserColumnName="product_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_UserColumnName="price" type="xs:double" />
+              <xs:element name="quantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_UserColumnName="quantity" type="xs:int" />
+              <xs:element name="production_date" msprop:Generator_ColumnPropNameInRow="production_date" msprop:Generator_ColumnPropNameInTable="production_dateColumn" msprop:Generator_ColumnVarNameInTable="columnproduction_date" msprop:Generator_UserColumnName="production_date" type="xs:dateTime" />
+              <xs:element name="expiry_date" msprop:Generator_ColumnPropNameInRow="expiry_date" msprop:Generator_ColumnPropNameInTable="expiry_dateColumn" msprop:Generator_ColumnVarNameInTable="columnexpiry_date" msprop:Generator_UserColumnName="expiry_date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
