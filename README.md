@@ -1,3 +1,6 @@
+## Tags
+
+`C#` `.NET`
 # SuperMarket-Application
 The Supermarket Management System is a Windows Form application developed in C# that serves as a comprehensive solution for managing various aspects of a supermarket. This application provides functionalities to streamline operations, enhance efficiency, and improve the overall management of a supermarket.
 # Features
